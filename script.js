@@ -58,7 +58,7 @@ function dragDrop() {
 }
 
 // =====================================
-// TOUCH EVENTS
+// TOUCH EVENT
 // =====================================
 
 for (const card of cards) {
