@@ -51,8 +51,7 @@ h1{
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
-
-.card {
+  .card {
   background-color: white;
   color: #333;
   padding: 1rem;
@@ -73,77 +72,29 @@ h1{
     background-color: #d1d3d8;
 }
 
-/* ==================================== */
-/* MOBILE DRAG STYLES */
-/* ==================================== */
-
-.card {
-    touch-action: none;    
-    user-select: none;      
-    -webkit-user-select: none;
-    -webkit-touch-callout: none; 
-}
-
-.card:active {
-    cursor: grabbing;
-}
-
-.list {
-    transition: background-color 0.2s ease;
-    min-height: 100px;   
-}
-
-.list.over {
-    background-color: #d0d0d0;
-}
-
-/* ==================================== */
-/* MOBILE RESPONSIVE */
-/* ==================================== */
-
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 0.5rem;
-    }
-
-    h1 {
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-    }
-
-    .board {
+    .board{
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        width: 100%;
     }
-
     .list {
-        width: 100%;
-        max-width: 100%;
-        min-width: unset;
-        margin-bottom: 15px;
-        padding: 15px;
-        min-height: 150px;
+        width: 80%;
+        margin-bottom: 20px;
     }
-
-    .list h2 {
-        font-size: 1.3rem;
-        margin-bottom: 12px;
-    }
-
+    
     .card {
-        width: 100%;
-        padding: 18px 15px;
-        font-size: 1.1rem;
-        margin-bottom: 12px;
-        min-height: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        touch-action: none;    
+        user-select: none;      
+        -webkit-user-select: none;
+        -webkit-touch-callout: none; 
+    }
+    
+    .list {
+        transition: background-color 0.2s ease;
+        min-height: 100px;   
+    }
+    
+    .list.over {
+        background-color: #d0d0d0;
     }
 }
